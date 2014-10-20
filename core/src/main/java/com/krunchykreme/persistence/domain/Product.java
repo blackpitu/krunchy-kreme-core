@@ -1,7 +1,5 @@
 package com.krunchykreme.persistence.domain;
 
-import java.util.UUID;
-
 import javax.persistence.*;
 
 import com.krunchykreme.events.product.ProductDetails;
@@ -10,6 +8,7 @@ import com.krunchykreme.events.product.ProductDetails;
 public class Product {
 	@Id
 	@Column
+	@GeneratedValue
 	private Integer id;
 	
 	@Column
